@@ -55,6 +55,6 @@ class Edificio{
 	    }
 	    
 	    virtual void print()=0;
-		virtual void agreagrAumento()=0;	
+		virtual bool especial()=0;	
 };
 #endif

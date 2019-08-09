@@ -33,8 +33,8 @@ class Reposteria{
 	        return galletas;
 	    }
 	    
-	    void agregarGalletas(){
-	    	galletas++;
+	    void agregarGalletas(int x){
+	    	galletas+=x;
 		}
 	
 	    void setGalletas(int galletas) {

@@ -8,6 +8,14 @@
 #define MEJORA_CPP
 using namespace std;
 class Mejora{
-	
+	private:
+	int multiplicador;
+	public:
+		Mejora(int x){
+			multiplicador = x;
+		}
+		int getMultiplicador(){
+			return multiplicador;
+		}
 };
 #endif
