@@ -9,7 +9,8 @@ using namespace std;
 #ifndef EDIFICIO_CPP
 #define EDIFICIO_CPP
 class Edificio{
-	private:
+	protected:
+		int cont;
 		string nombre;
 	    int preciobase;
 	    int produccionbase;
@@ -29,6 +30,10 @@ class Edificio{
 	    void setNombre(string nombre) {
 	        this->nombre = nombre;
 	    }
+	    
+	    int getCont(){
+	    	return cont;
+		}
 	
 	    int getPreciobase() {
 	        return preciobase;
@@ -54,6 +59,9 @@ class Edificio{
 	        this->aumento = aumento;
 	    }
 	    
+	    void agregarCont(){
+			cont++;
+		}
 	    virtual void print()=0;
 		virtual bool especial()=0;	
 };

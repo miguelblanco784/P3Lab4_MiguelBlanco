@@ -12,7 +12,7 @@ class Banco: public Edificio{
 	}
 	
 	bool especial(){
-		
+		return true;
 	}
 };
 #endif

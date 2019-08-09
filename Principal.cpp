@@ -48,8 +48,23 @@ int main(){
 				cout<<multiplicador<<endl;
 				p->agregarGalletas(agregarcookies*multiplicador);
 				for(int i = 0; i < edificios.size();i++){
-					
+					edificios.at(i)->agregarCont();
+				}
+				for(int i = 0; i < edificios.size();i++){
 					if(edificios.at(i)->getNombre()=="Granja"){
+						if(edificios.at(i)->especial()){
+							p->agregarGalletas(10);
+						}
+					}
+					if(edificios.at(i)->getNombre()=="Banco"){
+						if(edificios.at(i)->especial()){
+							agregarcookies+=1;
+						}
+					}
+					if(edificios.at(i)->getNombre()=="Granja"){
+						if(edificios.at(i)->especial()){
+							agregarcookies+=3;
+						}
 					}
 				}
 				break;
